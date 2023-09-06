@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    height: 550px;
+    width: 300px;
+    background-color: whitesmoke;
+    border: 3px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+#storiyan {
+    height: 100px;
+    width: 100%;
+    background-color: lightskyblue;
+    /* padding: 10px; */
+    white-space: nowrap;
+    border-bottom: 1px solid #dadada;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+#storiyan::-webkit-scrollbar {
+    display: none;
+}
+
+.story {
+    height: 70px;
+    width: 70px;
+    border: 2px solid rgb(175, 20, 20);
+    border-radius: 50%;
+    margin: 10px 0;
+    margin-left: 4px;
+    /* padding: 10px; */
+    display: inline-block;
+    overflow: hidden;
+}
+
+.story img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#full-screen {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    /* background-color: lightcoral; */
+    position: absolute;
+    display: none;
+}
+
+h1 {
+    margin-top: 20px;
+    font-family: apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;;
+}
